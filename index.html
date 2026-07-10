@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz Escolar</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="splash">
+
+    <div id="splash-logo">📚</div>
+
+    <h1>Quiz Escolar</h1>
+
+</div>
+
+
+<div id="lobby">
+
+<h1>📚 Quiz Escolar</h1>
+
+<p>Escolha um nível:</p>
+
+<button onclick="escolherNivel('6')">
+6º Ano
+</button>
+
+<button onclick="escolherNivel('7')">
+7º Ano
+</button>
+
+<button onclick="escolherNivel('8')">
+8º Ano
+</button>
+
+<button onclick="escolherNivel('9')">
+9º Ano
+</button>
+
+</div>
+
+
+
+<div id="quiz" style="display:none;">
+
+<h2 id="contador"></h2>
+
+
+<div id="barra-container">
+
+<div id="barra"></div>
+
+</div>
+
+
+<h2 id="pergunta"></h2>
+
+
+<div id="alternativas"></div>
+
+
+</div>
+
+
+
+
+<div id="resultado" style="display:none;">
+
+<h1>🏆 Fim do jogo!</h1>
+
+<h1 id="medalha"></h1>
+
+<h2 id="pontuacao"></h2>
+
+
+<button onclick="location.reload()">
+Jogar novamente
+</button>
+
+
+</div>
+
+
+
+<script src="perguntas.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
